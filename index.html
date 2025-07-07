@@ -27,7 +27,7 @@
         <div class="head">
             <div class="contenue">
                 <span>Bonjour, Je suis</span>
-                <h1>Developpeur Front-End</h1>
+                <h1>Développeur Front-End</h1>
                 <p> Je m'appelle <strong>Léonnit</strong>,développeur mobile, desktop et web avec une expertise en UI/UX design. Actuellement à la recherche d’un stage pour mettre mes compétences en pratique à travers des projets concrets et innovants.</p>
                 <button id="button">📥 Télécharger le CV</button>
             </div>
@@ -132,14 +132,14 @@
     </section>
     <section>
         <div class="centre contact">
-            <form action="" method="get">
-                <label for="">Adrese email:</label><br>
-                <input type="email" name="email" id="" placeholder="Votre adress email" required><br>
-                <label for="">Nom: </label><br>
-                <input type="text" placeholder="Votre nom" name="nom" required ><br>
+            <form id="contactForm">
+                <label for="email">Adresse email:</label><br>
+                <input type="email" name="email" id="email" placeholder="Votre adresse email" required><br>
+                <label for="nom">Nom: </label><br>
+                <input type="text" placeholder="Votre nom" name="nom" id="nom" required ><br>
                 <label for="message">Message: </label><br>
-                <textarea name="message" id="message" required> </textarea><br><br>
-                <input class="btn" type="submit" name="envoyes" value="Envoyer"><br>
+                <textarea name="message" id="message" required></textarea><br><br>
+                <input class="btn" type="submit" value="Envoyer"><br>
             </form>
             <div class="forme">
                 <h1>Contact</h1>
@@ -178,6 +178,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
