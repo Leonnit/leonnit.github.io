@@ -72,14 +72,12 @@ header .nav-bar{
 
 .head{
     margin-top: 100px;
-    padding: 1rem 3rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding-top: 50px;
     color: white;
 }
-
 .head .contenue{
     z-index: 1;
     max-width: 500px;
@@ -87,21 +85,25 @@ header .nav-bar{
 }
 
 .contenue span{
+    padding: 1rem 2rem;
     font-size: 1.2rem;
     margin-bottom: 10px;
 }
 
 .contenue h1{
     margin-top: 10px;
-    font-size: 3rem;
+    padding:0 1rem;
+    font-size: 2.8rem;
     margin-bottom: 20px;
 }
     
 .contenue p{
+    padding: 0 1rem;
    margin-bottom: 20px;
    line-height: 25px;
 }
 .contenue button{
+    margin-left: 1rem;
    width: 200px;
    background-color: #DAD8D9;
    color: #2C394A;
@@ -112,9 +114,13 @@ header .nav-bar{
    margin-bottom: 20px;
 }
 .head .image img{
-    width: 450px;
+    width: 400px;
     margin-top: -100px;
 }
+
+
+
+
 
 /*CSS Section*/
 section .profile{
@@ -124,7 +130,9 @@ section .profile{
     justify-content: center;
     align-items: center;
 }
+
 .profile .image img{
+    display: flex;
     width: 350px;
 }
 
@@ -185,7 +193,6 @@ section .profile{
     margin-bottom: 10px;
     font-size: 1.2rem;
 }
-
 
 .skill{
     margin-top: 50px;
@@ -279,7 +286,6 @@ section .profile{
 }
 .service .p{
     font-size: 1rem;
-    padding: 0 1rem;
     max-width: 1000px;
 }
 .service .services{
@@ -290,7 +296,7 @@ section .profile{
     gap: 1rem;
     margin-bottom: 50px;
     padding: 0 1rem;
-    /*background-color: red;*/
+  
 }
 .service1 {
     display: flex;
@@ -336,8 +342,9 @@ section .profile{
     margin: 30px;
 }
 .contact form{
-    background-color: #1B222D;
+    background-color: #2C394A;
     color: #fff;
+    text-align: left;
     padding: 1rem 2rem;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -372,8 +379,8 @@ form .btn:hover{
     color: #DAD8D9;
 }
 .contact .forme{
-    width: 450px;
     background-color: #2C394A;
+    width: 450px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -409,29 +416,44 @@ form .btn:hover{
     background-color: #1B222D;
     color: #DAD8D9;
 }
-
-
 /*CSS footer*/
 footer{
+    /*background-color: rebeccapurple;*/
     margin-top: 70px;
     padding-top: 20px;
 }
 .footer{
+    /*background-color: #2C394A;*/
     color: #DAD8D9;
+    align-items: center;
     display: flex;
     justify-content: center;
-    gap: 5rem;
+    flex-wrap: wrap;
     margin-bottom: 20px;
 }
+
 .navigation {
+    color: #DAD8D9;
+    display: flex;
+    justify-content: left;
+    align-items: start;
+    flex-direction: column;
+    width: 200px;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     gap:0.3rem;
-    margin-left: 20px;
 }
 .navigation .lien{
     justify-content: start;
     align-items: start;
+    display: flex;
+    flex-direction: column;
+    gap:0.3rem;
+}
+.navigation .lien{
+    justify-content: left;
+    align-items:start;
     display: flex;
     flex-direction: column;
     gap:0.3rem;
@@ -444,16 +466,30 @@ footer{
     transition: 0.4s;
     margin-top: 10px;
 }
-.numero, .socieau, .navigation{
+.numero, .socieau{
     color: #DAD8D9;
     display: flex;
-    justify-content: start;
+    justify-content: left;
     align-items: start;
     flex-direction: column;
+    margin-bottom: 20px;
+}
+.numero{
+    width: 300px;
+}
+.socieau{
+    width: 450px;
 }
 .numero span{
     color: #DAD8D9;
     margin-bottom: 20px;
+}
+.socieau{
+    width: 450px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
 }
 footer strong{
     margin-bottom: 20px;
@@ -461,13 +497,8 @@ footer strong{
     font-size: 1.5rem;
     font-weight: bold;
 }
-.socieau{
-    width: 450px;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-       
+.socieau p{
+    width: 400px;
 }
 
 .socieau .link{
@@ -481,6 +512,7 @@ footer strong{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #DAD8D9;
     border-radius: 50%;
 }
 
@@ -496,54 +528,23 @@ footer strong{
     width: 40px;
 }
 
-
-
-
-
 @media (max-width: 1000px){
-    .footer{
-        flex-wrap: wrap;
-    }
-
-   .profile .image img{
+    .profile .image img{
         display: none;
-    }
-
-    .socieau{
-        width: 450px;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-       
-    }
-    .numero, .socieau, .navigation{
-        color: #DAD8D9;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    .navigation .lien{
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        gap:0.3rem;
-    }
-    .footer{
-        color: #DAD8D9;
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-        margin-bottom: 20px;
     }
 }
 
+@media (max-width:700px){
 
-@media (max-width:800px){
-
+    .skill p{
+        padding: 0 0.5rem;
+    }
     .header{
         height: 500px;
+    }
+    .footer{
+        align-items: center;
+        flex-direction: column; 
     }
     .nav-bar{
         flex-wrap: wrap;
@@ -568,15 +569,16 @@ footer strong{
     }
     .head{
         margin-top: 10px;
+        color: white;
     }
     .head .image img{
         margin-left: -200px;
         display: flex;
         z-index: -1;
-        width: 350px;
+        width: 330px;
     }
     .formation {
-        padding: 0 2rem;
+        padding: 0 1rem;
     }
     .formation .ecole{
         gap: 3rem;
@@ -585,16 +587,21 @@ footer strong{
         align-items: center;
         justify-content: center;
     }
+    .service .p{
+        max-width: 330px;
+    }
     .contact{
         background-color: #2C394A;
        flex-direction: column-reverse;
        justify-content: center;
        align-items: center;
+       border-radius: 10px;
     }
 
 }
 
-@media (max-width:500px){
+@media (max-width:600px){
+
     .head {
         flex-direction: column;
         margin-top: 10px;
@@ -602,7 +609,7 @@ footer strong{
     .head .image img{
         display: flex;
         z-index: -1;
-        width: 350px;  
+        width: 330px;  
         margin-top: -450px;
         margin-left: 0; 
     }
@@ -617,10 +624,34 @@ footer strong{
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
     }
-
+    .contact .forme{
+        width: 360px;
+        
+    }
+    .services{
+        width: 350px;
+    }
     .contact form input, textarea{
-        width: 380px;
+        width: 300px;
         margin-bottom: 15px;
+    }
+    .forme p{
+        max-width: 300px;
+    }
+    .numero, .socieau, .navigation{
+        justify-content: center;
+        align-items: center;
+    }
+    .navigation .lien{
+        margin-top: -30px;
+        align-items: center;
+        justify-content: center;
+    }
+    .socieau{
+        width: 350px;
+    }
+    .socieau p{
+        width: 350px;
     }
 
 }
