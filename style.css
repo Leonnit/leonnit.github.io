@@ -112,6 +112,12 @@ header .nav-bar{
    border: none;
    border-radius: 3px;
    margin-bottom: 20px;
+   transition: 0.4s;
+   cursor: pointer;
+}
+.contenue button:hover{
+    background-color: #1B222D;
+    color: #DAD8D9;
 }
 .head .image img{
     width: 400px;
@@ -512,7 +518,6 @@ footer strong{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #DAD8D9;
     border-radius: 50%;
 }
 
@@ -652,6 +657,16 @@ footer strong{
     }
     .socieau p{
         width: 350px;
+    }
+    .link .link1{
+        height: 40px;
+        width: 40px;
+        
+    }
+
+    .link1 img{
+        height: 30px;
+        width: 30px;
     }
 
 }
