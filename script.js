@@ -29,7 +29,6 @@ cv.addEventListener('click', () =>{
 form = document.getElementById('contactForm');
 form.addEventListener('submit', async function (e) {
     e.preventDefault();
-    const email = document.getElementById('email').value;
     const nom = document.getElementById('nom').value;
     const message = document.getElementById('message').value;
 
@@ -39,7 +38,6 @@ form.addEventListener('submit', async function (e) {
 
     const templateParams = {
         from_name: nom,
-        from_email: email,
         message: message
     };
 

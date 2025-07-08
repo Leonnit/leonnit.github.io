@@ -71,7 +71,7 @@ header .nav-bar{
 }
 
 .head{
-    margin-top: 100px;
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -120,12 +120,9 @@ header .nav-bar{
     color: #DAD8D9;
 }
 .head .image img{
-    width: 400px;
+    width: 360px;
     margin-top: -100px;
 }
-
-
-
 
 
 /*CSS Section*/
@@ -538,6 +535,39 @@ footer strong{
         display: none;
     }
 }
+@media(max-width:950px){
+    .contact form{
+        width: 350px;
+    }
+    .contact form input, textarea{
+        width: 100%;
+    }
+    .contact .forme{
+        width: 350px;
+    }
+}
+
+@media (max-width: 850px){
+    
+    .head .contenue{
+        margin-top: -50px;
+    }
+    .head .image img{
+        width: 350px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 750px){
+    
+    .head .contenue{
+        margin-top: -50px;
+    }
+    .head .image img{
+        width: 330px;
+        margin-right: 20px;
+    }
+}
 
 @media (max-width:700px){
 
@@ -576,9 +606,13 @@ footer strong{
         margin-top: 10px;
         color: white;
     }
+    .head .contenue{
+        margin-top: -50px;
+    }
     .head .image img{
         margin-left: -200px;
         display: flex;
+        margin-right: 25px;
         z-index: -1;
         width: 330px;
     }
@@ -602,32 +636,38 @@ footer strong{
        align-items: center;
        border-radius: 10px;
     }
+    .contact form{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .contact form label{
+        width: 100%;
+    }
 
 }
 
 @media (max-width:600px){
-
-    .head {
-        flex-direction: column;
-        margin-top: 10px;
+    .head .contenue{
+        margin-top: -50px;
     }
-    .head .image img{
-        display: flex;
-        z-index: -1;
-        width: 330px;  
-        margin-top: -450px;
-        margin-left: 0; 
+    .head .contenue h1{
+       
+        font-size: 2.5rem;
     }
     .formation .ecole{
         flex-direction: column;
     }
     .contact form{
-        background-color: #1B222D;
         text-align: left;
-        color: #fff;
-        padding: 1rem ;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
         border-top-left-radius: 10px;
         border-bottom-left-radius: 10px;
+    }
+    .contact form label{
+        width: 100%;
     }
     .contact .forme{
         width: 360px;
@@ -637,7 +677,7 @@ footer strong{
         width: 350px;
     }
     .contact form input, textarea{
-        width: 300px;
+        width: 100%;
         margin-bottom: 15px;
     }
     .forme p{
@@ -663,10 +703,43 @@ footer strong{
         width: 40px;
         
     }
-
     .link1 img{
         height: 30px;
         width: 30px;
     }
+}
 
+@media (max-width:550px){
+
+    .head {
+       flex-direction: column;
+        margin-top: 50px;
+    }
+    .head .image img{
+        position: relative;
+        display: flex;
+        float: right;
+        z-index: 1;
+        width: 250px;  
+        margin-top: -130px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width:400px){
+
+    .head {
+       flex-direction: column;
+        margin-top: 10px;
+    }
+    .head .image img{
+       
+        width: 200px;  
+        margin-top: -120px;
+        margin-right: 20px;
+    }
+    .head .contenue h1{
+       
+        font-size: 1.5rem;
+    }
 }
